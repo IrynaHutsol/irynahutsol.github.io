@@ -77,9 +77,46 @@ body {
 .search {
 	width: 75%;
 	float: left;
+	border:1px solid #2c71b8;
+	height: 40px;
+	width: 200px;
+	margin-left: 30px;
+	padding-left: 20px;
+	margin-top: 5px;
+}
+
+::-webkit-input-placeholder {color:#2c71b8; font-size: 21px;}
+	/*задаємо колір placeholder*/
+
+.pole {
+	border: none;
+	background-color: #11ffee00;
+	/*Задали повністю прозорий фон*/
+	padding: 0px;
+	width: 130px;
+	height: 21px;
+	position: relative;
+	top: -5px;
+
+}
+
+.button {
+		height: 30px;
+		width: 30px;
+		background-color: #2c71b8;
+		border:solid #2c71b8;
+		padding: 0px;
+		border: 0px;
+		position: relative;
+		top: 4px;
+		left: 11px;
+		background-image: url("images/search.png");
+		background-repeat: no-repeat;
+		background-position: center center;
 }
 
 .buy {
 	width: 25%;
 	float: left;
 }
+
