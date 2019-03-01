@@ -10,6 +10,7 @@ body {
 	width: 1170px;
 	margin: 0 auto;
 	/*центрування*/
+	height: 50px;
 }
 
 body {
@@ -147,3 +148,46 @@ body {
 	left: -11px;
 	top: -11px;
 }
+
+.pid li {
+	clear: both;
+	border: none;
+}
+
+.pid li:last-child {
+	border: none;
+}
+
+ .menu li ul {
+ 	display:none;
+ 	/*Ховаємо наше підменю*/
+ }
+
+.menu li:hover ul {
+    display:block;
+    /*Задаємо щоб при наведені з'являлось наше підменю.'*/
+}
+
+.pid li a {
+	width: 292.5px;
+	padding-left: 30px;
+	text-align: left;
+	background-color: #2c71b8;
+	color: white;
+}
+
+.pid li a:hover {
+	background-color: white;
+	color: #2c71b8;
+} 
+
+.strilka {
+	height: 20px;
+	width: 20px;
+	position: relative;
+	left: 115px;
+	top:-28px;
+	line-height: 20px;
+}
+
+
