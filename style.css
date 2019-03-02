@@ -47,11 +47,13 @@ body {
 	width: 25%;
 	float: left;
 	border-left: 1px solid #2c71b8;
+	position: relative;
 }
 
 .menu li:last-child {
 	border-right: 1px solid #2c71b8;
 }
+
 
 .menu a {
 	height: 50px;
@@ -91,7 +93,8 @@ body {
 	/*задаємо колір placeholder*/
 
 .pole {
-	border: none;
+	border:none;
+	outline:none;
 	background-color: #11ffee00;
 	/*Задали повністю прозорий фон*/
 	padding: 0px;
@@ -99,7 +102,6 @@ body {
 	height: 21px;
 	position: relative;
 	top: -5px;
-
 }
 
 .button {
@@ -169,7 +171,7 @@ body {
 }
 
 .pid li a {
-	width: 292.5px;
+	width: 293.5px;
 	padding-left: 30px;
 	text-align: left;
 	background-color: #2c71b8;
@@ -181,6 +183,12 @@ body {
 	color: #2c71b8;
 } 
 
+.pid {
+	position: absolute;
+	left: -1px;
+	z-index: 1;
+}
+
 .strilka {
 	height: 20px;
 	width: 20px;
@@ -190,4 +198,44 @@ body {
 	line-height: 20px;
 }
 
+li:hover > a {
+	background-color: #2c71b8;
+	color: white;
+}
 
+.slide {
+	height: 400px;
+	text-align: center;
+	font-size: 70px;
+	color: white;
+}
+
+
+.laptops {
+	 font-size: 48px;
+	 color: white;
+}
+
+.col1 {
+	width: 50%;
+	float: left;
+	font-size: 18px;
+	color: black;
+	text-align: center;
+}
+
+.col2 {
+	width: 50%;
+	float: left;
+	font-size: 18px;
+	color: black;
+	text-align: center;
+}
+
+.device {
+	text-align: center;
+}
+
+.all {
+	text-align: center;
+}
