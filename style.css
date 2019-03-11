@@ -191,17 +191,31 @@ body {
 }
 
 .strilka {
-	height: 20px;
-	width: 20px;
+	height: 50px;
+	width: 145.25px;
 	position: relative;
-	left: 115px;
-	top:-28px;
-	line-height: 20px;
+	left: 0px;
+	top:-50px;
+	background-image: url("images/strblue.png");
+	background-repeat: no-repeat;
+	background-position: 92% 50%;
+}
+
+.strilka:hover {
+	background-image: url("images/strwhite.png");
+	background-repeat: no-repeat;
+	background-position: 92% 50%;
 }
 
 li:hover > a {
 	background-color: #2c71b8;
 	color: white;
+}
+
+li:hover .strilka {
+	background-image: url("images/strwhite.png");
+	background-repeat: no-repeat;
+	background-position: 92% 50%;
 }
 
 .container2 {
@@ -313,12 +327,14 @@ li:hover > a {
 }
 
 .strilka2 {
-	height: 20px;
-	width: 20px;
+	height: 40px;
+	width: 270px;
 	position: relative;
-	left: 225px;
-	top:-22px;
-	line-height: 20px;
+	right: 21px;
+	top: -41px;
+	background-image: url("images/srtsortwhite.png");
+	background-repeat: no-repeat;
+	background-position: 95% center;
 }
 
  .sortby li ul {
