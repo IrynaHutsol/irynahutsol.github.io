@@ -222,13 +222,18 @@ li:hover > a {
 	height: 2736px;
 }
 
-.homepage {
+.breadcrumbs {
   	font-size: 14px;
   	color: rgba(255, 255, 255, 0.502);
   	height: 70px;
 	line-height: 70px;
 }
 
+.breadcrumbs1 {
+	color: rgba(255, 255, 255, 0.502);
+	text-decoration: none;
+
+}
 
 .laptops {
 	 font-size: 46px;
@@ -337,6 +342,7 @@ li:hover > a {
 	border-bottom: 1px solid white;
 	width: 270px;
 }
+
 .pid1 li a:hover {
 	background-color: white;
 	color: #2c71b8;
@@ -450,9 +456,8 @@ sup {
 	height: 48px;
 	position: relative;
 	top: 70px;
-
-
 }
+
 .carts {
 		height: 50px;
 		width: 210px;
@@ -471,7 +476,6 @@ sup {
 		left: 203px;
 		top: 12px;
 }
-
 
 .square {
 	height: 28px;
