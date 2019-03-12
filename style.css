@@ -94,13 +94,13 @@ body {
 }
 
 ::-webkit-input-placeholder {color:#2c71b8; font-size: 21px;}
-	/*задаємо колір placeholder*/
+	/*задаємо властивості placeholder*/
 
 .pole {
 	border:none;
 	outline:none;
 	background-color: #11ffee00;
-	/*Задали повністю прозорий фон*/
+/*	Задали повністю прозорий фон*/
 	padding: 0px;
 	width: 130px;
 	height: 21px;
@@ -109,18 +109,18 @@ body {
 }
 
 .button {
-		height: 30px;
-		width: 30px;
-		background-color: #2c71b8;
-		border:solid #2c71b8;
-		padding: 0px;
-		border: 0px;
-		position: relative;
-		top: 4px;
-		left: 11px;
-		background-image: url("images/search.png");
-		background-repeat: no-repeat;
-		background-position: center center;
+	height: 30px;
+	width: 30px;
+	background-color: #2c71b8;
+	border:solid #2c71b8;
+	padding: 0px;
+	border: 0px;
+	position: relative;
+	top: 4px;
+	left: 11px;
+	background-image: url("images/search.png");
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .buy {
@@ -250,7 +250,6 @@ li:hover .strilka {
 .breadcrumbs1 {
 	color: rgba(255, 255, 255, 0.502);
 	text-decoration: none;
-
 }
 
 .laptops {
@@ -264,6 +263,22 @@ li:hover .strilka {
 .col1 {
 	width: 50%;
 	float: left;
+	text-align: center;
+	position: relative;
+	left: 15px;
+	top:50px;
+}
+
+.col2 {
+	width: 50%;
+	float: left;
+	text-align: center;
+	position: relative;
+	left: 15px;
+	top:50px;
+}
+
+.col3 {
 	text-align: center;
 	position: relative;
 	left: 15px;
@@ -296,22 +311,6 @@ li:hover .strilka {
 	top:136px;
 }
 
-.col2 {
-	width: 50%;
-	float: left;
-	text-align: center;
-	position: relative;
-	left: 15px;
-	top:50px;
-}
-
-.col3 {
-	text-align: center;
-	position: relative;
-	left: 15px;
-	top:50px;
-}
-
 .sort {
 	height: 270px;
 }
@@ -326,13 +325,13 @@ li:hover .strilka {
 	text-align: left;
 	padding-left: 20px;
 	line-height: 40px;
-	/*po centry roztashyvanyya text*/
 	border:1px solid white;
 	text-decoration: none;
 	font-size: 21px;
 	color: white;
 	display: block;
 	font-weight: 200;
+	background-color: #2c71b8;
 }
 
 .strilka2 {
@@ -383,17 +382,6 @@ li:hover .strilka {
 	top:20px;
 }
 
-.device {
-	position: relative;
-	left: 15px;
-	width: 270px;
-	height: 845px;
-	border-right: 1px solid white;
-	background-color: rgba(255,255,255,0.2);
-	text-align: center;
-	color: white;
-}
-
 .all {
 	text-align: center;
 }
@@ -433,11 +421,12 @@ li:hover .strilka {
 }
 
 .description {
+	/*Опис*/
 	text-align: left;
 	padding-left: 15px;
 	color: white;
-	font-weight: 100;
-	line-height: 1.35;
+	font-weight: 200;
+	line-height: 1.6;
 }
 
 b {
@@ -453,9 +442,9 @@ b {
 }
 
 sup { 
-  vertical-align: super;
-  /* Елемент відображається як надстрочний.*/
-  font-size: 26px;
+	vertical-align: super;
+	/* Елемент відображається як надстрочний.*/
+	font-size: 26px;
 }
 
 .price {
@@ -472,16 +461,16 @@ sup {
 }
 
 .detals {
-		height: 50px;
-		width: 210px;
-		padding: 0px;
-		background-color: #2c71b8;
-		border: 1px solid white;
-		color: white;
-		font-weight: bold;
-		text-transform: uppercase;
-		/*Всі літери прописні*/
-		font-size: 16px;
+	height: 50px;
+	width: 210px;
+	padding: 0px;
+	background-color: #2c71b8;
+	border: 1px solid white;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	/*Всі літери прописні*/
+	font-size: 16px;
 }
 
 .cart {
@@ -491,22 +480,22 @@ sup {
 }
 
 .carts {
-		height: 50px;
-		width: 210px;
-		padding: 0px;
-		background-color: rgba(255, 255, 255, 0.2);
-		border: 1px solid white;
+	height: 50px;
+	width: 210px;
+	padding: 0px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 1px solid white;
 }
 
 .basketwhite {
-		height: 19px;
-		width: 19px;
-		background-image: url("images/buywhite.png");
-		background-repeat: no-repeat;
-		background-position: center center;
-		position: absolute;
-		left: 203px;
-		top: 12px;
+	height: 19px;
+	width: 19px;
+	background-image: url("images/buywhite.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	left: 203px;
+	top: 12px;
 }
 
 .square {
@@ -564,4 +553,63 @@ sup {
 	top:105px;
 	right: 20px;
 	font-weight: 200;
+}
+
+.device {
+	position: relative;
+	left: 15px;
+	width: 270px;
+	height: 845px;
+	border-right: 1px solid white;
+	background-color: rgba(255,255,255,0.2);
+}
+
+.input {
+	display: none;
+}
+
+
+label {
+	position: relative;
+	top: 10px;
+	left: 30px;
+	color: white;
+	font-weight: 200;
+	line-height: 2.4;
+	font-size: 17px;
+}
+
+label:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border:1px solid white;
+}
+
+input:checked + label:before {
+	background-color: white;
+}
+
+.checkbox {
+	padding-top: 33px;
+	padding-left: 30px;
+}
+
+.checkbox_1 {
+	padding-top: 65px;
+	padding-left: 30px;
+}
+
+.showmore {
+	height: 75;
+	width: 210px;
+	line-height: 75px;
+	color: white;
+	font-weight: 200;
+	padding-left: 37px;
+}
+
+.submit {
+	text-align: center;
 }
