@@ -228,10 +228,13 @@ li:hover .strilka {
 
 .slide {
 	height: 400px;
+	width: 100%;
 	text-align: center;
 	font-size: 70px;
 	color: white;
 	line-height: 400px;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
 }
 
 .main {
@@ -460,6 +463,7 @@ sup {
 	top: 55px;
 }
 
+
 .detals {
 	height: 50px;
 	width: 210px;
@@ -471,6 +475,10 @@ sup {
 	text-transform: uppercase;
 	/*Всі літери прописні*/
 	font-size: 16px;
+}
+
+.detals:hover {
+	background-color: #1c65b0;
 }
 
 .cart {
@@ -485,6 +493,10 @@ sup {
 	padding: 0px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border: 1px solid white;
+}
+
+.carts:hover {
+	background-color: rgba(255, 255, 255, -0.8);
 }
 
 .basketwhite {
@@ -613,3 +625,4 @@ input:checked + label:before {
 .submit {
 	text-align: center;
 }
+
