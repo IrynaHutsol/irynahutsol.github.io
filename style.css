@@ -226,16 +226,52 @@ li:hover .strilka {
 	/*центрування*/
 }
 
-.slide {
-	height: 400px;
-	width: 100%;
+.slider {
+	height: 370px;
+	width: 1113px;
 	text-align: center;
 	font-size: 70px;
 	color: white;
 	line-height: 400px;
+	position: relative;
+  	top: 50%;
+  	left: 50%;
+	transform: translate(-50%); 
+}
+
+.slider-backgraund {
+	background-color: rgb(0, 0, 0, 0.2);
 	border-bottom: 1px solid white;
 	border-top: 1px solid white;
 }
+
+.slick-prev:before{
+    content: url("images/sliderstr1.png");
+    opacity: 1;
+}
+
+.slick-next:before {
+    content: url("images/sliderstr2.png");
+    opacity: 1;
+    position: relative;
+    top: 1px;
+    left: -4.5px;
+}
+
+.slick-dots {
+bottom: -170px;
+}
+
+.slick-dots li button:before {
+	content: url("images/slidersquare.png");
+	opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+	content: url("images/slidersquarewhite.png");
+	opacity: 1;
+}
+
 
 .main {
 	height: 2736px;
@@ -543,7 +579,7 @@ sup {
 	background-position: center center;
 }
 
-.heart:hover {
+.heart:hover, .liked {
 	background-color: #2c71b8;
 	background-image: url("images/heartwhite.png");
 	background-repeat: no-repeat;

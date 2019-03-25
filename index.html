@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My site</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
@@ -54,8 +56,14 @@
 	</div>
 </header>
 <main class="main">
+<div class="slider-backgraund">
 	<div class="container2">
-		<div class="slide">Slide #3</div>
+		<div class="slider">
+			  <div>Slider 1</div>
+			  <div>Slider 2</div>
+			  <div>Slider 3</div>
+			  <div>Slider 4</div>
+		</div>
 			<div class="col-md-3">
 				<div class="device">
 					<form> 
@@ -161,6 +169,11 @@
 									<div class="detal">
 										<input type="button" class="detals" value="More details">
 									</div>
+<!-- 								<div class="quantity-block">
+									<button class="decrement-button">-</button>
+									<input type="text" class="quantity-input" value="1">
+									<button class="increment-button">+</button>
+									</div> -->
 									<div class="cart">
 										<input type="button" class="carts detals add-to-cart" value="Add to cart">
 										<div class="basketwhite"></div>
@@ -326,8 +339,12 @@
 						</div>
 				</div>
 	</div>
+</div>
 </main>
 <footer class="footer">© Copyright 2017</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="app.js"> </script>
 </body>
 </html>
