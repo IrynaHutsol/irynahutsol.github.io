@@ -494,27 +494,46 @@ sup {
 	top: 20px;
 }
 
-.detal {
+.quantity-block {
 	position: relative;
-	top: 55px;
+	top: 50px;
 }
 
-
-.detals {
+.quantity-input {
 	height: 50px;
 	width: 210px;
 	padding: 0px;
-	background-color: #2c71b8;
+	background-color: rgba(44, 113, 184, 0.5);
 	border: 1px solid white;
 	color: white;
 	font-weight: bold;
-	text-transform: uppercase;
-	/*Всі літери прописні*/
 	font-size: 16px;
+	text-align: center;
 }
 
-.detals:hover {
-	background-color: #1c65b0;
+.quantity-input:hover {
+	background-color: rgba(28, 101, 176, 0.5);
+}
+
+.decrement-button, .increment-button {
+	background-color: rgba(44, 113, 184, 0.5);
+	border: none;
+	outline: none;
+	color: white;
+	height: 20px;
+	width: 20px;
+	text-align: 20px;
+	font-size: 20px;
+}
+
+.decrement-button {
+	position: relative;
+	left: 30px;
+}
+
+.increment-button {
+	position: relative;
+	right: 30px; 
 }
 
 .cart {
@@ -529,6 +548,10 @@ sup {
 	padding: 0px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border: 1px solid white;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 16px;
 }
 
 .carts:hover {
@@ -660,5 +683,17 @@ input:checked + label:before {
 
 .submit {
 	text-align: center;
+}
+
+.button-checkbox {
+	height: 50px;
+	width: 210px;
+	padding: 0px;
+	background-color: rgba(44, 113, 184, 0.5);
+	border: 1px solid white;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
 }
 
