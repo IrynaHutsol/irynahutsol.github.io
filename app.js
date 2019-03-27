@@ -17,6 +17,8 @@ for (var i = 0;  i < addToCartButtons.length; i++) {
 	
 }
 
+
+
 // add like
 
 var likedButtons = document.querySelectorAll(".heart");
@@ -33,6 +35,8 @@ for (var i = 0; i < addToCartButtons.length; i++) {
 
 }
 
+
+
 // slick slider
 
 $('.slider').slick( {
@@ -41,30 +45,76 @@ $('.slider').slick( {
 	autoplaySpeed:10000,
 })
 
+
+
 // quantity input
 
-var decrementButton = document.querySelectorAll(".decrement-button") [0];
-var quantityInput = document.querySelectorAll(".quantity-input") [0];
-var incrementButton = document.querySelectorAll(".increment-button") [0];
+var decrementButton = document.querySelectorAll(".decrement-button") [0]
+var quantityInput = document.querySelectorAll(".quantity-input") [0]
+var incrementButton = document.querySelectorAll(".increment-button") [0]
 
 // console.log (quantityInput.value)
 
-    // vidkluchennya knopky
 
-    
+var currentValue =+quantityInput.value
+
+if (currentValue <=1) {
+	decrementButton.disabled = true
+	// disabled - відключення кнопки
+} else { 
+	decrementButton.disabled = false
+}
+
+if (currentValue >=10) {
+	incrementButton.disabled = true
+}
+else {
+	incrementButton.disabled = false
+}
+
 
 incrementButton.addEventListener ("click", function (){
 
 	var currentValue = +quantityInput.value
+	// Взнаємо поточне значення елементу
     var nextValue = currentValue + 1
-    // console.log (nextValue)
     quantityInput.value = nextValue
+
+if (nextValue <=1) {
+	decrementButton.disabled = true
+	// disabled - відключення кнопки
+} else { 
+	decrementButton.disabled = false
+}
+
+if (nextValue >=10) {
+	incrementButton.disabled = true
+} else {
+	incrementButton.disabled = false
+}
+
 })
 
 decrementButton.addEventListener ("click", function (){
 
 	var currentValue = +quantityInput.value
     var nextValue = currentValue - 1
-    // console.log (nextValue)
     quantityInput.value = nextValue
+
+if (nextValue <=1) {
+	decrementButton.disabled = true
+	// disabled - відключення кнопки
+} else { 
+	decrementButton.disabled = false
+}
+
+// Якщо nextValue менше або дорівнює 1 кнопку відключи - інакше включи.
+
+if (nextValue >=10) {
+	incrementButton.disabled = true
+}
+else {
+	incrementButton.disabled = false
+} 
+
 })
